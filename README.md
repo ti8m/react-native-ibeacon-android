@@ -3,12 +3,12 @@
 iBeacon support for React Native Android.
 
 ## Support
-I’ve tested this module with Estimote beacons and it works. I don’t know if it works with other beacons, too.
+I’ve tested this module with Estimote beacons and it works. I don’t know if it works with other beacons, too. It works only on real devices. In simulator you are not able to use bluetooth.
 
 ## Installation
 The installation is a little bit complicated but we can do this step by step:
 
-1.	In AndroidManifest.xml add this:
+1. In AndroidManifest.xml add this:
 
 ``` 
 ...
@@ -27,7 +27,7 @@ The installation is a little bit complicated but we can do this step by step:
 
 ```
 
-2.	In your `android/app/build.gradle` you have to add this dependency:
+2. In your `android/app/build.gradle` you have to add this dependency:
 	
 
 ```
@@ -35,7 +35,7 @@ The installation is a little bit complicated but we can do this step by step:
 compile 'com.estimote:sdk:0.10.1@aar' // <----- add this
 ...
 ````
-3.	In your MainActivity you have to add the BeaconReactPackage:
+3. In your MainActivity you have to add the BeaconReactPackage:
 
 ```
 ...
@@ -47,7 +47,7 @@ protected List<ReactPackage> getPackages() {
 }
 ...
 ```
-4.	In your app create a new package called „beacon“. There you have to add the classes BeaconReactPackage.java and RNBeacon.java from this github-repository. Please check the package in BeaconReactPackage.java and RNBeacon.java.
+4. In your app create a new package called „beacon“. There you have to add the classes BeaconReactPackage.java and RNBeacon.java from this github-repository. Please check the package in BeaconReactPackage.java and RNBeacon.java.
 
 Now you can start building your react-native-app. You have to import „NativeModules“.
 
