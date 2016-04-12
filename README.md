@@ -14,11 +14,11 @@ I’ve tested this module with Estimote beacons and it works. I don’t know if 
 The installation is a little bit complicated but we can do this step by step:
 
 1.	In AndroidManifest.xml add this:
+
 ` ...
 <!-- Required to scan for and connect to Estimote Beacons via Bluetooth. -->
 <uses-permission android:name="android.permission.BLUETOOTH"/>
 <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-... `
 
 <!-- Required for BLE scanning on Android 6.0 and above. -->
 <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
@@ -27,25 +27,40 @@ The installation is a little bit complicated but we can do this step by step:
 <uses-permission android:name="android.permission.INTERNET"/>
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
-2.	In your android/app/build.gradle you have to add this dependency:
-	compile 'com.estimote:sdk:0.10.1@aar' // <----- add this
+... `
+
+2.	In your `android/app/build.gradle` you have to add this dependency:
+	
+
+`
+...
+compile 'com.estimote:sdk:0.10.1@aar' // <----- add this
+...
+`
 3.	In your MainActivity you have to add the BeaconReactPackage:
 
+`
+...
 @Override
 protected List<ReactPackage> getPackages() {
     return Arrays.<ReactPackage>asList(
         new MainReactPackage(), new BeaconReactPackage(this) // <- Add this 
     );
 }
+...
+`
 4.	In your app create a new package called „beacon“. There you have to add the classes BeaconReactPackage.java and RNBeacon.java from this github-repository. Please check the package in BeaconReactPackage.java and RNBeacon.java.
 
 Now you can start building your react-native-app. You have to import „NativeModules“.
+
+`
 import React, {
 	...
 	NativeModules
 }
 var Beacons = NativeModules.RNBeacon;
-
+...
+`
 You also have to set a region with an identifier and a uuid otherwise it won’t work searching for beacons.
 
 var region = {
