@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/paweldylag/AndroidStudioProjects/ESTIMOTE/Android-SDK-Source/sdk/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="error_no_bluetooth_enabled">To use this app you need to turn on Bluetooth</string>
+    <string name="error_no_bluetooth_le">This device does not support Bluetooth Low Energy</string>
+    <string name="error_no_location_permission">To use this app you need to grant location permission</string>
+    <string name="requesting_location_access">Requesting location access</string>
+    <string name="requesting_location_access_cancel">I don\'t want to do this now</string>
+    <string name="requesting_location_access_ok">Go to settings to enable</string>
+    <string name="requesting_location_access_rationale">
+    Detecting beacons requires Location to be enabled. We\'ll never access your GPS location without your knowledge.
+  </string>
+    <string name="requesting_location_permission">Requesting location permission</string>
+    <string name="requesting_location_permission_rationale">
+    Detecting beacons requires Location permission. Please "Allow" so app can detect beacons.
+  </string>
+    <!-- From: file:/Users/paweldylag/AndroidStudioProjects/ESTIMOTE/Android-SDK-Source/sdk/src/main/res/values/themes.xml -->
+    <eat-comment/>
+    <style name="Theme.Transparent" parent="android:Theme">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowContentOverlay">@null</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowIsFloating">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+  </style>
+</resources>
