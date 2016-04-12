@@ -1,6 +1,6 @@
 # react-native-ibeacon-android
 
-iBeacon support for React Native Android. I have developed this app as similar as possible to that of @frostney
+iBeacon support for React Native Android. I have developed this API as similar as possible to that of frostney: https://github.com/frostney/react-native-ibeacon
 
 ## Support
 I’ve tested this module with Estimote beacons and it works. I don’t know if it works with other beacons, too. Beacons don't work in simulator. 
