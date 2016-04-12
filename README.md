@@ -14,11 +14,11 @@ I’ve tested this module with Estimote beacons and it works. I don’t know if 
 The installation is a little bit complicated but we can do this step by step:
 
 1.	In AndroidManifest.xml add this:
-' ...
+` ...
 <!-- Required to scan for and connect to Estimote Beacons via Bluetooth. -->
 <uses-permission android:name="android.permission.BLUETOOTH"/>
 <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
-... '
+... `
 
 <!-- Required for BLE scanning on Android 6.0 and above. -->
 <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
