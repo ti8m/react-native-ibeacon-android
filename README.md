@@ -47,7 +47,7 @@ protected List<ReactPackage> getPackages() {
 }
 ...
 ```
-4. In your app create a new package called „beacon“. There you have to add the classes BeaconReactPackage.java and RNBeacon.java from this github-repository. Please check the package in BeaconReactPackage.java and RNBeacon.java.
+4.In your app create a new package called „beacon“. There you have to add the classes `BeaconReactPackage.java` and `RNBeacon.java` from this github-repository. Please check the package in `BeaconReactPackage.java` and `RNBeacon.java`.
 
 Now you can start building your react-native-app. You have to import „NativeModules“.
 
@@ -122,4 +122,5 @@ Beacons.stopRangingForRegion(region);
 ```
 This method stops the ranging of beacons in your defined region.
 
-
+## Example-App
+To use the app in this repository, you have to clone this repository. Then you are able to run the application on your (real) device.
