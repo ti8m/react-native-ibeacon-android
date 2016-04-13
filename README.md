@@ -124,3 +124,8 @@ This method stops the ranging of beacons in your defined region.
 
 ## Example-App
 To use the app in this repository, you have to clone this repository. Then you are able to run the application on your (real) device.
+
+
+## License
+
+<a href="https://www.ti8m.ch/">Visit ti&m</a>
