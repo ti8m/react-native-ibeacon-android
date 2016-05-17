@@ -128,4 +128,4 @@ To use the app in this repository, you have to clone this repository. Then you a
 
 ## License
 
-<a href="https://www.ti8m.ch/">Visit ti&m</a>
+MIT.
